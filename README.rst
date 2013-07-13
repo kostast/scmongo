@@ -29,3 +29,7 @@ A MongoDB backend for HTTP cache storage. It stores responses using GridFS.
 To use it, set the following Scrapy setting in your project::
 
     HTTPCACHE_STORAGE = 'scmongo.httpcache.MongoCacheStorage'
+
+To enable zlib compression, set the following Scrapy setting in your project::
+
+    HTTPCACHE_COMPRESSION = 'zlib'
